@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+//navbar styling
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  top:0;
+  position: fixed;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.8s;
+  align-items: center;
+  height: 70px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.navbar-show-color {
+  background: black;
+
+}
+
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color:white;
+  padding: 50px;
+  border: 1px solid white;
+}
+
+
+.brand-logo {
+  color:white;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding: 10px;
+  transition: all .25s;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+  border-left: none;
+  border-right: none;
+  background-color: Transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.brand-logo:hover {
+  letter-spacing: 4px;
+  margin-left: 15px;
+}
+
+//About me section styling
+.about-us-container {
+  max-width: 1035px;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+
+}
+
+.grid-row {
+  flex-basis: 50%;
+}
+
+.grid-row:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.grid-row:nth-of-type(1) > img {
+  object-fit: contain;
+}
+
+.grid-row:nth-of-type(2) {
+  text-align: center;
+  align-self: center;
+}
+
+
+//Skill section styling
+.skill-section {
+  background-color: black;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.skills-grid {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-grid-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colored {
+  font-size: 90px;
+  margin: 0 5px;
+
+} 
+
+//Portfolio section styling
+.project-section {
+  padding: 10 30px;
+  background-color: black;
+  color:white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.blue-column {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-column {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+
+//Contact me section
+.contact-me {
+  height: 60vh;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+.contact-me > div {
+  background-color: yellowgreen;
+  border: 2px solid white;
+
+}
+
+.contact-me-details {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.contact-me-details > div {
+  flex: 1;
+  height: 200px;
+  border: 1px solid red;
+  margin: 0 30px;
+}
+
+.fa-icon {
+  font-size: 40px;
+  color: orange;
+}
+
+.fa-icon-contact {
+  font-size: 40px;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .about-us-container {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+
+  }
+
+  .contact-me-details {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 500px;
+    margin: 0 50px;
+    padding: 15px;
+  }
+
+  .contact-me-details > div {
+    margin-bottom: 10px;
+  }
+ 
+}
+
+
+.red-color {
+  color: red;
+}
+
+.default-color {
+  color:white;
+}
